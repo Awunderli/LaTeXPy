@@ -31,8 +31,9 @@ macros=r"""
 \newcommand{\Pre}{\text{Pre}}
 """
 
-import math, itertools, re, sys, subprocess
+import math, itertools, re, sys, subprocess,sympy
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'provers'])
+from sympy import *
 from provers import *
 from IPython.display import *
 
