@@ -290,7 +290,7 @@ def init_symbol_table():    #need to implement \tuple
     infix("\\nvdash", 550).__repr__ = lambda x: "p9(pyp9("+str(x.a[0])+"),[pyp9(\""+str(x.a[1])+"\")],10,0)[0]" # disproves
     prefix("show",310).__repr__ =     lambda x: "show("+str(x.a[0])+")"      # show poset or (semi)lattice
     postfix("?", 600).__repr__ =      lambda x: str(x.a[0])+"?"              # calculate value and show it
-    prefix("\cos",350).__repr__=   lambda x: "cos("+str(x.a[0])+")" # cosine of a variable
+    prefix("\cos",700).__repr__=   lambda x: "sympy.cos("+str(x.a[0])+")" # cosine 
     symbol("(end)")
 
 init_symbol_table()
